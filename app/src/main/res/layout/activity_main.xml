@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.peos.springselectviewdemo.MainActivity">
+
+
+    <com.peos.springselect.SpringSelectView
+        android:id="@+id/view_select_1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp">
+    </com.peos.springselect.SpringSelectView>
+
+    <com.peos.springselect.SpringSelectView
+        android:id="@+id/view_select_2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        app:src="@drawable/icon_hand"
+        app:checkedColor="@color/color_icon_checked1"
+        app:unCheckColor="@color/color_icon_un_checked1"
+        app:isChecked="true">
+    </com.peos.springselect.SpringSelectView>
+
+    <com.peos.springselect.SpringSelectView
+        android:id="@+id/view_select_3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        app:src="@drawable/icon_collection"
+        app:checkedColor="@color/color_icon_checked2"
+        app:unCheckColor="@color/color_icon_un_checked2"
+        app:isChecked="false">
+    </com.peos.springselect.SpringSelectView>
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:text="定时器、Handler检测是否正常释放"
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
